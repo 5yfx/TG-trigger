@@ -37,12 +37,10 @@ nohup python3 bot.py &
 
 
 # 2、宝塔面板 计划任务 懒人模式 30 分钟运行一次任务
-pkill -f bot.py
-****
-cd /www/wwwroot/TGBOT
-****
-nohup python3 bot.py &
-****
+pkill -f bot.py  
+cd /www/wwwroot/TGBOT  
+nohup python3 bot.py &  
+
 
 
 ![image](https://github.com/5yfx/TG-trigger/blob/main/IMG/%E7%A4%BA%E4%BE%8B.png)
