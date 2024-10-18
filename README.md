@@ -41,7 +41,8 @@ pkill -f bot.py
 cd /www/wwwroot/TGBOT  
 nohup python3 bot.py &  
 
-
+****
+****
 
 ![image](https://github.com/5yfx/TG-trigger/blob/main/IMG/%E7%A4%BA%E4%BE%8B.png)
 
