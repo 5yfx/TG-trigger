@@ -20,6 +20,7 @@ python3 bot.py &
 然后输入你的TG手机号，验证码，二级密码，将会把你的登录信息缓存在你的目录下
 然后下次就不用再登录账号了，例如重启后也无需再次输入账号等信息！
 
+
 # 1、ssh启动命令后台运行
 cd /当前目录
 nohup python3 bot.py &
@@ -31,7 +32,7 @@ cd /www/wwwroot/TGBOT
 nohup python3 bot.py &
 
 
-
+![image](https://github.com/5yfx/TG-trigger/blob/main/IMG/%E7%A4%BA%E4%BE%8B.png)
 
 
 # 汇旺担保 是诈骗   # 拍照采集 是诈骗
