@@ -2,8 +2,8 @@ from telethon import TelegramClient, events
 import os
 
 # 使用你的 API ID 和 API Hash
-api_id = 23986442
-api_hash = 'fe3c62a27a6bb3083298e7033021da0e'
+api_id = 你的ID
+api_hash = '你的 API Hash'
 
 # 创建一个新的 Telegram 客户端
 client = TelegramClient('session_name', api_id, api_hash)
@@ -17,10 +17,10 @@ def read_text_file(file_path):
         return "文件不存在。"
 
 # 定义触发关键词列表
-keywords = ['拍照','摄影','车辆','收款码','商铺','店铺','赚钱','在家','已上压','就有钱','灵活','自由安排','二维码','拍','商家','收款','在家','80元','100元','暴力','商机','八十/','一百/','一张','一对一','盈利','定制服务','手机']
+keywords = ['拍照','摄影','车辆','收款码','商铺','店铺','赚钱','在家','已上压','就有钱','灵活','自由安排','二维码','拍','商家','收款','在家','80元','100元','暴力','商机','八十/','一百/','一张','一对一','盈利','定制服务']
 
 # 定义白名单用户 ID 列表
-whitelist = [162720000, 166840000, 5902190000]  # 替换为实际的用户 ID 获取方式 网页 web.telegram.org 登录你的TG，然后要给谁白名单就点击他头像到跟他聊天的界面，注意看上面网址的变化，后面的数据就是ID，群组频道ID则是 -100xxxxx
+whitelist = [162726413, 1668444065, 5902192632]   # 替换为实际的用户 ID 获取方式 网页 web.telegram.org 登录你的TG，然后要给谁白名单就点击他头像到跟他聊天的界面，注意看上面网址的变化，后面的数据就是ID，群组频道ID则是 -100xxxxx
 
 # 登录
 async def main():
@@ -32,7 +32,7 @@ async def main():
             await client.send_file(chat_id, file_path, caption=caption, reply_to=event.id if event else None)
         except Exception as e:
             print(f"Failed to send file: {e}")
-            await client.send_message(chat_id, caption)
+            await client.send_message(chat_id, caption, reply_to=event.id if event else None)
 
     @client.on(events.NewMessage)
     async def handler(event):
